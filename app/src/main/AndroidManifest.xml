@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.noriter.sunghyun.navpangyi">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher_i"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ActivitySplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityMembership" />
+        <activity
+            android:name=".ActivityRealTimeInfo"
+            />
+        <activity android:name=".ActivityBookMarks" />
+        <activity android:name=".ActivityNavigation" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="route"
+                    android:scheme="daummaps" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActivityHelp" />
+        <activity android:name=".ActivityPermissionCheck" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="b431e2d4f3ca4c2cf87327d73f9471ae" />
+
+        <activity android:name=".ActivityTest">
+
+        </activity>
+        <service android:name=".RealService"
+            android:enabled="true"
+            android:exported="true"/>
+    </application>
+
+</manifest>

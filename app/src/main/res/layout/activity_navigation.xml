@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.noriter.sunghyun.navpangyi.ActivityNavigation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#46b0d8"
+            android:src="@drawable/actionbar" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="12"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/infobar" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/QuickButtons"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                android:background="@drawable/lookin"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_gravity="center|right"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20sp"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:id="@+id/tvInputDestination"
+                            android:layout_marginRight="10sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvInputHere"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="10sp"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvInputDistance"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="20sp"
+                            android:layout_marginRight="10sp"
+                            android:gravity="center_vertical" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:background="@drawable/info_mapping"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="80"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/Map2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="80"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"></LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#211d1c">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp"
+            android:id="@+id/tvNav"
+            android:text="길찾기 모드 실행중"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#BDBDBD"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        >
+
+        <TextView
+            android:id="@+id/tvDestination"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.73"
+            android:gravity="center"
+            android:text="도착지"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#BDBDBD"/>
+        <TextView
+            android:id="@+id/tvInputDestination"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="2.10"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            />
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#BDBDBD"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#BDBDBD"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        >
+        <TextView
+            android:id="@+id/tvHere"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.35"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:text="현재위치"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#BDBDBD"/>
+
+        <TextView
+            android:id="@+id/tvInputHere"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#BDBDBD"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#BDBDBD"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:textColor="#000000"
+            android:layout_weight="0.36"
+            android:gravity="center"
+            android:text="남은거리"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#BDBDBD" />
+
+        <TextView
+            android:id="@+id/tvInputDistance"
+            android:textColor="#000000"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1.03"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="#BDBDBD" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:background="#BDBDBD"
+        />
+    <View
+        android:layout_width="300sp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="#6cbcda"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/Map2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+    -->
+
+    <!--
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f2f5f7"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="380sp"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#6cbcda" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvDestination"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.15"
+                        android:text="도착지 "
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvHere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.07"
+                        android:text="현재 위치 "
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tvDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.07"
+                        android:text="남은 거리 "
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvInputDestination"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/tvInputHere"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp" />
+                    <TextView
+                        android:id="@+id/tvInputDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="380sp"
+                android:layout_height="2dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="#6cbcda" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    -->
+
+
+</LinearLayout>
